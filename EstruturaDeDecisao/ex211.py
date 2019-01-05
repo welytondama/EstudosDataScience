@@ -15,11 +15,19 @@ salario = float(input('Qual o salário atual do funcionário da empresa Tabajara
 reajustado = 0
 if salario <= 280:
     reajustado = salario * 1.2
+    print('Foi aplicado um reajuste de 20% ao salário')
+    print('O salário sofreu acréscimo de R${:.2f}'.format(reajustado - salario))
 elif salario <=700:
     reajustado = salario * 1.15
+    print('Foi aplicado um reajuste de 15% ao salário')
+    print('O salário sofreu acréscimo de R${:.2f}'.format(reajustado - salario))
 elif salario <=1500:
     reajustado = salario * 1.1
+    print('Foi aplicado um reajuste de 10% ao salário')
+    print('O salário sofreu acréscimo de R${:.2f}'.format(reajustado - salario))
 else:
     reajustado = salario * 1.05
+    print('Foi aplicado um reajuste de 5% ao salário')
+    print('O salário sofreu acréscimo de R${:.2f}'.format(reajustado - salario))
 
 print('O salário que antes era de R${:.2f} passou a ser R${:.2f}'.format(salario, reajustado))
